@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>jQUery Practice</title>
+    <script>
+    // $(document).ready(function(){
+    //     $("p").dblclick(function(){
+    //         $(this).hide();
+    //     });
+    // });
+
+   //mouseEnter event 
+//    $(document).ready(function(){
+//         $("#pId").mouseenter(function(){
+//             $(this).css("background","pink");
+//         })
+//    });
+ //focus() and blur() event
+//  $(document).ready(function(){
+//     $("input").focus(function(){
+//         $(this).css("background","grey");
+//     });
+
+//     $("input").blur(function(){
+//         $(this).css("background","yellow");
+//     });
+//  });
+ //The on() Method
+ $(document).ready(function(){
+    $("p").on("click",function(){
+        $(this).hide();
+    });
+
+ });
+
+
+
+    </script>
+</head>
+<body>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis libero commodi ea sunt! Esse, aut fuga?</p>
+<p>click me , it will disappear Me</p>  
+<p id="pId">Enter the Pragraph area</p>  
+Name:<input type="text">
+Full Name:<input type="text">
+
+</body>
+</html>

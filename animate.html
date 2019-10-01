@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <title>JQuery Practice</title>
+    <style>
+    .box{
+        border: 2px solid black;
+        height: 100px;
+        width: 100px;
+        padding: 10px;
+        background: lightgreen;
+        position: relative;
+    }
+    
+    
+    
+    </style>
+</head>
+<body>
+
+<h1>jQuery Animate Method</h1>
+<div class="box">
+    this is a box
+</div>
+
+<br>
+<button id="btnAnimate">Animate</button>
+    
+</body>
+
+<script>
+$(document).ready(function(){
+    $("#btnAnimate").click(function(){
+        $(".box").animate({left : '150px',fontSize: '30px'},"slow",function(){
+            console.log("first animation completed")
+        });
+        $(".box").animate({top : '150px'},"slow",function(){
+            console.log("second animation completed")
+        });
+        $(".box").animate({width : '120px'},"slow",function(){
+            console.log("third animation completed")
+        });
+
+
+
+    });
+
+});
+
+
+
+</script>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>jQuery Practice</title>
+
+<style>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+#box{
+    background: slateblue;
+    color: black;
+    padding: 5px;
+    border: 2px solid black;
+}
+
+
+</style>
+
+</head>
+<body>
+    <h1>Get Method</h1>
+
+    <div id="box" class="test abc">
+        <h2>Text Box</h2>
+        <p>Lorem ipsum dolor sit amet consectetur <span>adipisicing elit. Exercitationem</span>  cupiditate debitis perspiciatis officia.</p>
+
+
+    </div>
+  
+<script>
+$(document).ready(function(){
+   var b= $("#box p").html();
+   console.log(b)
+
+
+});
+
+
+</script>    
+    
+</body>
+</html>

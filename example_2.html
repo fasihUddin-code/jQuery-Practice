@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        //Selects all elements
+    // $(document).ready(function(){
+    //     $("button").click(function(){
+    //         $("*").hide();
+    //     });
+  
+    // });
+    //Selects the current HTML element
+    // $(document).ready(function(){
+    //    $("button").click(function(){
+    //      $(this).hide();
+    //    });
+    // });
+    //Selects all <p> elements with class="intro"
+    // $(document).ready(function(){
+    //    $("button").click(function(){
+    //      $("h1.intro").hide();
+    //    });
+    // });
+    
+    //Selects the first <li> element of the first <ul>
+    // $(document).ready(function(){
+    //     $("button").click(function(){
+    //         $("ul li:first-child").hide()
+    //     });
+    // });
+    
+    //Selects all elements with an href attribute	
+    // $(document).ready(function(){
+    //     $("button").click(function(){
+    //         $("[href]").hide();;
+
+    //     });
+
+    // });
+    //Selects all <a> elements with a target attribute value equal to "_blank"
+    // $(document).ready(function(){
+    //     $("button").click(function(){
+    //         $("a[target!='_blank']").hide();
+
+    //     });
+
+    // });
+   $(document).ready(function(){
+        $("tr:even").css("border","2px solid red");
+
+   });
+    </script>
+</head>
+<body>
+    <!-- <h1 class="intro">Heading T</h1>
+    <h1 class="intro3">Heading T</h1>
+
+    <p class="intro">Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <button> click to hide all elements</button> -->
+    <!-- <p>List:1</p>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+
+    </ul>
+    <p>List:2</p>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+
+    </ul>
+    <p><a href="https://www.w3schools.com/html/" target='_blank'>HTML Tutorials</a> </p>
+    <p><a href="https://www.w3schools.com/css/">Css Tutorials</a> </p>
+    <button>Click It</button> -->
+    <table border="1">
+            <tr>
+              <th>Company</th>
+              <th>Country</th>
+            </tr>
+            <tr>
+              <td>Alfreds Futterkiste</td>
+              <td>Germany</td>
+            </tr>
+            <tr>
+              <td>Berglunds snabbköp</td>
+              <td>Sweden</td>
+            </tr>
+            <tr>
+              <td>Centro comercial Moctezuma</td>
+              <td>Mexico</td>
+            </tr>
+            <tr>
+              <td>Ernst Handel</td>
+              <td>Austria</td>
+            </tr>
+            <tr>
+              <td>Island Trading</td>
+              <td>UK</td>
+            </tr>
+    </table>
+    
+</body>
+</html>

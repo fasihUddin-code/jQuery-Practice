@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <title>jQuery Practice</title>
+</head>
+<body>
+<!-- <p id="demo">Lorem ipsum dolor sit amet, consectetur adipisicing
+    <b> elit. Possimus, aspernatur </b>  neque. Nobis, facere blanditiis?</p> -->
+
+<!-- <a href="https://www.w3schools.com" id="w3s">W3Schools.com</a> -->
+<br>
+<p>Name:<input type="text" id="test" value="Fasih Uddin"></p>
+<button id="showValue">Show Value</button>
+
+<!-- <button id="showText">Show Text</button>
+<button id="showHtml">Show HTML</button> -->
+
+<!-- <button id="btn_sHref">Show href value</button> -->
+
+
+<script>
+//Example 1
+
+$(document).ready(function(){
+    $("#showText").click(function(){
+       alert("Text:" +$("#demo").text()); 
+    });
+
+    $("#showHtml").click(function(){
+       alert("HTML:" +$("#demo").html()); 
+    });
+
+});
+
+//Example 2
+
+$(document).ready(function(){
+    $("#btn_sHref").click(function(){
+       alert("Href:" +$("#w3s").attr("href")); 
+    });
+});
+
+
+//Example 3
+
+$(document).ready(function(){
+    $("#showValue").click(function(){
+       alert("value:" +$("#test").val()); 
+    });
+});
+
+</script>
+
+
+</body>
+
+
+
+</html>
