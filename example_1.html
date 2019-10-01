@@ -10,32 +10,25 @@
     </script>
     <script>
         //target element id then apply function
-    $(document).ready(function(){
-        $("button").click(function(){
-        $("#p1").hide();
-
-
+        $(document).ready(function(){
+            $("#second-para-hide").click(function(){
+                $("#p1").hide();
+            });
+            $("#hide-test").click(function(){
+                $(".test").hide();
+            });
         });
-    
-    });
-       //target element className then apply function
-    $(document).ready(function(){
-        $("button").click(function(){
-        $(".test").hide();
-        });
-    });
-    
     </script>
 </head>
 <body>
     <h2>Heading A</h2>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, obcaecati!</p>
     <p id="p1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, obcaecati!</p>
-    <button>Click to hide second paragraph</button>
+    <button id="second-para-hide">Click to hide second paragraph</button>
 
     <h2>Heading B</h2>
     <p class="test">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, eum!</p>
-    <button>click mE</button>
+    <button id="hide-test">click Me</button>
     
 </body>
 </html>
