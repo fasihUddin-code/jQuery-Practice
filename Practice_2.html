@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <title>JQuery Practice</title>
+    <style>
+            body{
+            font-family: Arial, Helvetica, sans-serif;
+            }
+                
+            #box{
+            padding: 10px;
+            border: 2px solid #999966;
+            background: slateblue;
+            }
+    </style>  
+</head>
+<body>
+ 
+        <h1>After and Before Methods</h1>
+        <div id="box">
+                <h2>Test box</h2>
+                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, consequuntur!
+                    adipisicing elit. Dicta, consequuntur!
+                </p> 
+            
+        </div>  
+        <br>
+        <button id="btnAppend">AppendTo</button>
+        <button id="btnBefore">PrependTo</button>
+        
+        <script>
+        
+        $(document).ready(function(){
+            $("#btnAppend").click(function(){
+                $("<h2>appendTo: heading A </h2>").appendTo("#box");
+
+            });
+
+            $("#btnBefore").click(function(){
+                $("<h2>prependTo: heading A </h2>").prependTo("#box");
+
+            });
+
+        });
+        
+        
+        </script>
+    
+</body>
+</html>

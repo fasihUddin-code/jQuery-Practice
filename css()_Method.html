@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <title>JQuery Practice</title>
+<style>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#box{
+    padding: 10px;
+    border: 2px solid black;
+}
+
+
+</style>
+
+</head>
+<body>
+<h1>jQuery CSS Method</h1>
+
+<div id="box">
+    <h2>Test box</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, consequuntur!</p>
+
+</div>
+<br>
+<br>
+<button id="btnStyle">Add style</button>
+    
+
+
+<script>
+
+$(document).ready(function(){
+    $("#btnStyle").click(function(){
+        $("#box").css({"background":"#4dff4d",
+                        "color":"white"
+
+        });
+
+    });
+
+});
+
+
+</script>
+
+</body>
+</html>

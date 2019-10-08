@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <title>JS Practice</title>
+</head>
+<body>
+ <p id="test">This is old paragraph</p>   
+
+
+ <button id="btn1">Show old/new text</button>
+
+ <script>
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+            $("#test").text(function(i,origText){
+                return "Old Text: "+ origText + "New Text : Hello world! (index :"
+                + i + ")";
+                });
+        
+        });
+    
+    
+    });     
+
+ 
+ </script>
+
+</body>
+</html>

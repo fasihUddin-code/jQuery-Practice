@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <title>JQuery Practice</title>
+<style>
+    body{
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #box{
+    padding: 10px;
+    border: 2px solid black;
+    }
+
+    .bgBox{
+        background:  #ffbb33;
+    }
+
+
+</style>
+
+    
+</head>
+<body>
+        <h1>jQuery On() Method</h1>
+
+        <div id="box">
+            <h2>Test box</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, consequuntur!</p>
+        
+        </div>
+        <br>
+       <button id="btnStyle">Remove</button>
+ 
+        <script>
+        // $(document).ready(function(){
+        //     $("#box").on("mouseover mouseout",function(){
+        //         $(this).toggleClass("bgBox");
+
+        //     });
+
+        // });
+        
+        $(document).ready(function(){
+            $("#box").on({
+                "click" :function(){
+                    $(this).css("background"," #ff8533");
+                },
+                "mouseover" : function(){
+                    $(this).css("background","#ff3333");
+
+                },
+                "mouseout" : function(){
+                    $(this).css("background"," #cc6699");
+                }
+
+
+            });
+
+            $("#btnStyle").click(function(){
+                $("#box").off("mouseover mouseout");
+
+            });
+
+
+
+        });
+        
+        </script>        
+        
+
+    
+</body>
+</html>

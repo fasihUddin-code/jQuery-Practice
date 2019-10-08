@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <title>JQuery Practice</title>
+
+<style>
+        body{
+        font-family: Arial, Helvetica, sans-serif;
+        }
+            
+        #box{
+        padding: 10px;
+        border: 2px solid #999966;
+        }
+</style>       
+
+
+</head>
+<body>
+
+        <h1>jQuery Append And Prepend Method</h1>
+
+        <!-- <div id="box">
+            <h2>Test box</h2>
+            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, consequuntur!
+                adipisicing elit. Dicta, consequuntur!
+            </p> 
+        
+        </div> -->
+        <ol>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+        </ol>
+        <br>
+        <button id="btnAppend">Append</button>
+        <button id="btnPrepend">Prepend</button>
+        
+        <script>
+        $(document).ready(function(){
+            $("#btnAppend").click(function(){
+                $("ol").append("<li>new append item</li> ")
+            });
+            
+            $("#btnPrepend").click(function(){
+                $("ol").prepend(" <li>new prepend item</li> ")
+            });
+        });
+        
+        </script>
+
+</body>
+</html>

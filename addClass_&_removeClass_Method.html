@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+    #box{
+        border: 2px solid black;
+        padding: 10px
+    }
+
+    .first{
+        background: slateblue;
+    }
+
+    .second{
+        background: indigo;
+    }
+    .white{
+        color: white;
+    }
+    .btn{
+        background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+    }
+    
+    
+    
+    </style>
+</head>
+<body>
+    <h1>jQuery Class Methods</h1>
+
+    <div id="box">
+        <h2>Test Box</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, a?</p>
+
+    </div>
+    <br>
+    <button id="btnAdd"> Add Class </button>
+    <button id="btnRemove"> Remove Class </button>
+    <button id="btnToggle"> Toggle Class </button>
+
+    <script>
+    $(document).ready(function(){
+        $("#btnAdd").click(function(){
+            $("#box, h1").addClass("second");
+
+        });
+
+        $("#btnRemove").click(function(){
+            $("#box").removeClass("second");
+
+        });
+
+        $("#btnToggle").click(function(){
+            $("button").toggleClass("btn");
+
+        });
+
+
+
+
+    });
+    
+    
+    </script>
+    
+</body>
+</html>

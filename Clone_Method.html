@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <title>JQuery Practice</title>
+</head>
+<body>
+    
+<h1>headding</h1>
+<p>This is 1st paragraph</p>
+<p>This is 2nd paragraph</p>
+<button>Clone all p elements, and append them to the body element</button>
+
+
+
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("p").clone().appendTo("h1");
+
+    });
+
+
+});
+
+
+
+
+</script>
+
+</body>
+
+
+</html>

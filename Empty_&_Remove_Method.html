@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <title>JQuery Practice</title>
+    <style>
+            body{
+            font-family: Arial, Helvetica, sans-serif;
+            }
+                
+            #box{
+            padding: 10px;
+            border: 2px solid #999966;
+            background: slategray;
+            }
+    </style>    
+</head>
+<body>
+        <h1>Empty and Remove Methods</h1>
+        <div id="box">
+                <h2>Test box</h2>
+                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, consequuntur!
+                    adipisicing elit. Dicta, consequuntur!
+                </p> 
+            
+        </div>  
+        <br>
+        <button id="btnEmpty">Empty</button>
+        <button id="btnRemove">Remove</button>
+           
+
+ 
+<script>
+$(document).ready(function(){
+    $("#btnEmpty").click(function(){
+        $("#box h2").empty();
+
+    });
+
+    $("#btnRemove").click(function(){
+        $("#box h2").remove();
+
+    });
+
+});
+
+
+
+
+</script>  
+  
+    
+</body>
+</html>
