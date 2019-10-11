@@ -1,16 +1,36 @@
 #div1 {
-    width: 80px;
-    height: 80px;
-    background: red;
+    /* width: 80px;
+    height: 80px; */
+    background-color: red;
 }
 #div2 {
-    width: 80px;
-    height: 80px;
-    background: blue;
+    /* width: 80px;
+    height: 80px; */
+    background-color: blue;
 }
 
 #div3{
     width: 80px;
     height: 80px;
     background: violet;
+}
+
+div{
+    background: slateblue;
+}
+
+#test {
+    background: teal;
+    padding: 10px;
+    border: 5px solid black;
+    height: 100px;
+    width: 300px;
+    /* margin: 20px; */
+    position: fixed;
+    left: 20px;
+    bottom: 30px;
+}
+
+.white {
+    color: rebeccapurple;
 }

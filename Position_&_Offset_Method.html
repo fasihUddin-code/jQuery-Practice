@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>jQuery Practice</title></head>
+
+</head>
+<body>
+
+        <h1>jQuery Position & Offset Method</h1>
+        <div id="test">
+                <h2>Test box</h2>
+                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, consequuntur!
+                    adipisicing elit. Dicta, consequuntur!
+                </p> 
+            
+        </div>  
+        <br>
+        <button id="btnPosition">Position</button>
+        <button id="btnOffSet">Offset</button>
+
+        <script>
+        $(document).ready(function(){
+            $("#btnPosition").click(function(){
+                // var x =$("h2").position();
+                // alert("h2 tag top :"+x.top+"h2 tag left :"+x.left);
+                var x =$("#test h2").position();
+                console.log(" Top: " + x.top + " " + "Left :"+x.left);
+
+            });
+
+
+        });
+
+        $(document).ready(function(){
+            $("#btnOffSet").click(function(){
+                // var x =$("h2").position();
+                // alert("h2 tag top :"+x.top+"h2 tag left :"+x.left);
+                // console.log($("#test").offset({top:0,right:0}));
+                var x =$("#test h2").offset();
+                console.log(" Top: " + x.top + " " + "Left :"+x.left);
+            });
+
+
+        });
+        
+        
+        </script>
+    
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>jQuery Practice</title></head>
+
+<body>
+    <h1>jQuery wrapAll() and wrapInner() method</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, quibusdam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, quibusdam.</p>
+    
+    <button id="btnWrapAll">wrapAll</button>
+    
+    <button id="btnWrapInner">wrapInner</button>
+    
+
+
+    <script>
+        //wrapAll example
+        $(document).ready(function(){
+            $('#btnWrapAll').click(function(){
+                $("p").wrapAll("<div id='test'></div>")
+
+            });
+
+        });    
+
+        //wrapInner example
+        $(document).ready(function(){
+            $('#btnWrapInner').click(function(){
+                $("h1").wrapInner("<span class='white'></span>")
+
+            });
+
+        });  
+
+        
+        
+        
+    </script>
+
+</body>
+
+</html>

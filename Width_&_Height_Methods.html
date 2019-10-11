@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>jQuery Practice</title></head>
+
+</head>
+<body>
+        <h1>jQuery Width & Height Methods</h1>
+        <div id="test">
+                <h2>Test box</h2>
+                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, consequuntur!
+                    adipisicing elit. Dicta, consequuntur!
+                </p> 
+            
+        </div>  
+        <br>
+        <button id="btnWidth">Width</button>
+        <button id="btnHeight">Height</button>
+
+        <script>
+        $(document).ready(function(){
+            $("#btnWidth").click(function(){
+                $("#test").width("200px");
+                console.clear()
+               console.log("Width :"+$("#test").width()); 
+               console.log("innerWidth :"+$("#test").innerWidth()); 
+
+               console.log("outerWidth :"+$("#test").outerWidth()); 
+
+               console.log("outerWidth(true) :"+$("#test").outerWidth(true)); 
+
+
+            });
+
+        });
+        
+        $(document).ready(function(){
+            $("#btnHeight").click(function(){
+                $("#test").height("400px");
+
+                console.clear()
+               console.log("Height :"+$("#test").height()); 
+               console.log("innerHeight :"+$("#test").innerHeight()); 
+
+               console.log("outerHeight :"+$("#test").outerHeight()); 
+
+               console.log("outerHeight(true) :"+$("#test").outerHeight(true)); 
+
+
+            });
+
+        });
+        
+        
+        </script>
+    
+</body>
+</html>

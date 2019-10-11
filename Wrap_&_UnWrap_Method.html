@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>jQuery Practice</title>
+
+
+
+
+
+</head>
+<body>
+ 
+<!-- <div id="div1">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos quas vitae sint corporis.</p>
+</div>    
+
+ 
+<div id="div2">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos quas vitae sint corporis.</p>
+</div>    -->
+
+<!-- <button>Remove the parent element of each p element</button> -->
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, ducimus.</p>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, ducimus.</p>
+
+<button id="btnWrap">Wrap a div element around each p element</button>
+<button id="btnUnWrap">Remove the parent element of each p element</button>      
+
+
+<script>
+    //unWrap example
+        $(document).ready(function(){
+            $("#btnWrap").click(function(){
+                $("p").wrap("<div></div>");
+
+            });
+
+        });  
+
+        //Wrap Example
+        $(document).ready(function(){
+            $("#btnUnWrap").click(function(){
+                $("p").unwrap();
+
+            });
+
+        });  
+        
+        
+</script>
+
+</body>
+</html>

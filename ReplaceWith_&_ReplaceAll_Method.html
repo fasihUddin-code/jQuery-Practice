@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <title>jQuery Practice</title>
+    <style>
+    body{
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #box{
+    background: slateblue;
+    color: black;
+    padding: 5px;
+    border: 2px solid black;
+    }
+
+    
+    
+    </style>
+</head>
+<body>
+    <h1>jQuery ReplaceWith and ReplaceAll method</h1>
+
+    <div id="box">
+        <h2>Test Box</h2>
+        <p>Lorem ipsum dolor sit amet  <span> consectetur adipisicing elit.</span> Neque vel cupiditate eligendi, voluptatem nesciunt, veritatis corporis ea minima sequi sit possimus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius cumque, veritatis optio hic distinctio molestiae est nemo eveniet animi alias voluptatum!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam cumque saepe laboriosam, tenetur fuga excepturi molestiae nostrum nesciunt, quas quaerat et!</p>
+
+    </div>
+    <br>
+    <button id="replaceBtn">Replace</button>
+
+
+<script>
+$(document).ready(function(){
+    $("#replaceBtn").click(function(){
+        // $(".box p:nth-child(1)").replaceWith("<h4> professional Tutors </h4>");
+        $("<h3>Replace</h3>").replaceAll("#box p:first");
+    });
+
+
+});
+
+
+
+</script>    
+    
+</body>
+</html>
