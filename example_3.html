@@ -28,7 +28,7 @@
 //  });
  //The on() Method
  $(document).ready(function(){
-    $("p").on("click",function(){
+    $("#disappear-me").on("click",function(){
         $(this).hide();
     });
 
@@ -40,7 +40,7 @@
 </head>
 <body>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis libero commodi ea sunt! Esse, aut fuga?</p>
-<p>click me , it will disappear Me</p>  
+<p id="disappear-me">click me, it will disappear Me</p>  
 <p id="pId">Enter the Pragraph area</p>  
 Name:<input type="text">
 Full Name:<input type="text">
